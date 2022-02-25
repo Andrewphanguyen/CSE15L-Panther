@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.ArrayList;
 
 
 public class MarkdownParseTest {
@@ -88,6 +87,7 @@ public class MarkdownParseTest {
         assertEquals(expected, MarkdownParse.getLinks(contents));
     }
 
+    
     @Test
     public void testFile9() throws IOException {
         Path fileName = Path.of("./test-file9.md");
@@ -95,7 +95,6 @@ public class MarkdownParseTest {
         List<String> expected = List.of();
         assertEquals(expected, MarkdownParse.getLinks(contents));
     }
-    
    
     
 }
