@@ -100,7 +100,7 @@ public class MarkdownParseTest {
     public void testFile10() throws IOException {
         Path fileName = Path.of("./test-file10.md");
 	    String contents = Files.readString(fileName);
-        List<String> expected = List.of("url.com", "`google.com","google.com");
+        List<String> expected = List.of("a.com", "a.com((");
         assertEquals(expected, MarkdownParse.getLinks(contents));
     }
     
