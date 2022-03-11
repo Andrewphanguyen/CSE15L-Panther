@@ -1,1 +1,2 @@
-<h1>Foo</h1>
+<p>[foo <em>[bar <a href="/uri">baz</a>](/uri)</em>](/uri)</p>
+
